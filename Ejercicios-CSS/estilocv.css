@@ -1,0 +1,35 @@
+style,
+
+div{
+    border: 2px solid black;
+    margin:30px 40px;
+    padding: 15px;
+    background-color: rgba(92, 23, 122, 0.4);
+    border-radius: 25px;
+    box-shadow: 2px 6px #7a8aac;
+
+}
+#foto {
+    margin-top: 22px;
+    float: left;
+    width: 7%;
+    border-radius: 50%;
+}
+/*
+acá va un comentario
+*/
+body{
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    background: linear-gradient(to right, rgba(111, 58, 193, 0.56), #ab9b35);
+
+
+}
+h1,h2,h3 {
+    text-shadow: 3px 2px rgba(141, 141, 141, 0.7);
+}
+
+.titulo_principal {font-weight: bold}
+.cabecera{background-color: #19ac67
+}
+style
