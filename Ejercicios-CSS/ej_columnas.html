@@ -7,13 +7,28 @@
         #tituloPrincipal {background-color: darkgrey;}
         .tituloNoticia {font-size: 30px;}
         body{font-family: Tahoma;}
-        #link1:link, #link1:visited {
-            color: #4CAF50;
-        }
+        #link1:link
+        #link1 {background-color: #dbeeff;
+            padding: 20px;
 
         }
-        #link1:hover{font-size: 1.4em;}
+
+        #link1:visited {
+            color: #4CAF50;
+        }
+        article {
+            column-count: 2;
+
+        }
+
+        #link1:hover{font-size: 1.4em;
+        background-color: #b4c5ff;
+            transition: background-color, font-size 1s linear;
+
+        }
         #link1:active{font-weight: bold;}
+
+
 
     </style>
 </head>
@@ -27,7 +42,7 @@
     <h3 class="tituloNoticia" >CordoBici </h3>
     Publicado el 07/03/2018 en Agropecuarias y Ambiente
     <article>
-        <div>
+        <div class="columna_1">
             <p>
                 Un intercambio académico inspiró a Joaquín, Nicolás, Guido y Facundo para elegir el tema de su trabajo final.
                 Dos de ellos estuvieron el año pasado en Sevilla y se quedaron "enamorados" –palabras textuales- de su
@@ -57,7 +72,7 @@
                 de la tesis.
             </p>
         </div>
-        <div class="grid-item">
+        <div class="columna_2">
             <p>
                 Gracias a una profunda investigación comercial, sumada a una simulación realizada por un programa llamado
                 anylogic, consiguieron localizar de manera estratégica 19 estaciones con 280 bicicletas, en Nueva Córdoba y

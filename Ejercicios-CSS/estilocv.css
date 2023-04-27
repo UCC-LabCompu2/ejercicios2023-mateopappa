@@ -1,7 +1,7 @@
 style,
 
 div{
-    border: 2px solid black;
+    border: 2px solid rgba(66, 232, 203, 0.5);
     margin:30px 40px;
     padding: 15px;
     background-color: rgba(92, 23, 122, 0.4);
@@ -30,6 +30,6 @@ h1,h2,h3 {
 }
 
 .titulo_principal {font-weight: bold}
-.cabecera{background-color: #19ac67
+.cabecera{background-color: #89efbf
 }
 style
