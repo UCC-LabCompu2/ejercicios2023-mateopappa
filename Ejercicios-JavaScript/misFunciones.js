@@ -156,6 +156,65 @@ const mostrarDiv = (divId) => {
     }
 };
 
+function dibujarimg(posx,posy){
+    var canvas= document.getElementById("myCanvas");
+    var ctx= canvas.getContext("2d");
+
+
+    console.log(posx,posy);
+
+    var img=new Image();
+    img.src="images/auto.png";
+
+    img.onload=function (){
+        ctx.drawImage(img,posx,posy);
+    }
+}
+function dibujarcuadriculado(){
+    var canvas= document.getElementById("myCanvas");
+    var ctx= canvas.getContext("2d");
+
+    var alturamax=canvas.height;
+    var anchomax=canvas.width;
+
+    ctx.beginPath();
+    for(var i=0;i<alturamax;) {
+        ctx.moveTo(0, i);
+        ctx.lineTo(1000, i);
+        ctx.strokeStyle = "#3e67d9";
+        ctx.stroke();
+        i=i+20;
+    }
+    ctx.closePath();
+
+
+    ctx.beginPath();
+    for(var i=0;i<anchomax;) {
+        ctx.moveTo(i, 0);
+        ctx.lineTo(i, alturamax);
+        ctx.strokeStyle = "#3e67d9";
+        ctx.stroke();
+        i=i+20;
+    }
+    ctx.closePath();
+
+
+    ctx.beginPath();
+    ctx.moveTo(0,alturamax/2);
+    ctx.lineTo(anchomax, alturamax/2);
+    ctx.strokeStyle = "#ff010d";
+    ctx.stroke();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.moveTo(anchomax/2,0);
+    ctx.lineTo(anchomax/2, alturamax);
+    ctx.strokeStyle = "#ff010d";
+    ctx.stroke();
+    ctx.closePath();
+
+}
+
 function calcularsuma(){
     var num1,num2;
     num1=Number(document.getElementsByName("sum_num1")[0].value);
