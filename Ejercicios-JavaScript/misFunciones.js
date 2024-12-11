@@ -262,3 +262,27 @@ function calculardiv() {
     num2 = Number(document.getElementsByName("div_num2")[0].value);
     document.getElementsByName("div_total")[0].innerHTML = num1/num2;
 }
+
+var bandera;
+function dibujar(event){
+    var canvas = document.getElementById("canvasparadibujo");
+    var ctx = canvas.getContext("2d");
+
+    var posX = event.clientX;
+    var posY = event.clientY;
+    console.log(posX, posY);
+
+    canvas.onmousedown = function (){bandera = true};
+    canvas.onmouseup = function (){bandera=false};
+
+    if(bandera){
+        ctx.fillRect(posX, posY, 5,5);
+        ctx.fill;
+    }
+}
+function limpiarCanvas(){
+    var canvas = document.getElementById("canvasparadibujo");
+    var ctx = canvas.getContext("2d");
+
+    canvas.width = canvas.width;
+}
